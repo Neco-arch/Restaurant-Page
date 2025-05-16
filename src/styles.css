@@ -24,13 +24,13 @@ body {
     justify-content: center;
     align-items: center;
     gap: 50px;
-    background-color: antiquewhite;
     height: 5vh;
     color: black;
 }
 button {
     width: 100px;
     height: 5vh;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
  
@@ -59,4 +59,20 @@ button {
 
 .Main-Title {
     text-align: center;
+}
+
+.Order-now {
+    width: 200px;
+    border-radius: 30px;
+}
+
+.Review-Comments {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.Reviews-paragraph {
+    font-size: 1.2rem;
 }
