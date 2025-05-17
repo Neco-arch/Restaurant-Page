@@ -76,3 +76,7 @@ button {
 .Reviews-paragraph {
     font-size: 1.2rem;
 }
+
+.Nav-button {
+    border-radius: 10px;
+}
