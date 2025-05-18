@@ -11,12 +11,14 @@ img {
 
 h1 {
     color: white;
+    text-align: center;
 }
 
 body {
     background-image: url(./asset/resources/mahmoud-fawzy-Dbx6-XZY6Dg-unsplash.jpg);
     background-repeat: no-repeat; 
     background-size: cover; 
+    height: 100%;
 }
 
 .Nav-bar {
@@ -79,4 +81,41 @@ button {
 
 .Nav-button {
     border-radius: 10px;
+}
+
+.Resturant_Img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.History {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.Vibing-style {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    gap: 20px;
+    padding: 10px;
+}
+
+.Contact_Us {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.OpeningHourDiv {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    gap: 10px;
+    padding: 15px;
 }

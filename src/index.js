@@ -1,7 +1,7 @@
 import "./styles.css";
 import Imagepath from "./asset/resources/johnny-ho-IRekhZLIy6E-unsplash.jpg";
-import MenuPage from "./Menu"; 
-import Contact from "./Contact"; 
+import { Menu_Page } from "./Menu"; 
+import { About_page } from "./About"; 
 
 const Home_Button = document.querySelector("#Home");
 const Menu_Button = document.querySelector("#Menu");
@@ -63,15 +63,12 @@ const clearContent = () => {
 };
 
 const HomePage = function() {
-    clearContent(); 
 
     let Context_text = "Craving some tasty sushi in a relaxed setting? We've got you covered. Expect fresh fish, creative rolls, and friendly faces. It's the perfect spot to kick back with friends and enjoy some seriously good food.";
 
-    // Main Title Part
     const Main_Title_Div = Creatediv(Content, "Main-Title");
     CreateH1(Main_Title_Div, "Titleh1", "The Sushi Place");
 
-    // Description Part
     const DescriptionDiv = Creatediv(Content, "Description");
     CreateH2(DescriptionDiv, "Random-Description", Context_text);
     CreateImg(DescriptionDiv, Imagepath, "Sushi Restaurant"); 
@@ -84,6 +81,11 @@ const HomePage = function() {
     CreateH2(Reviews_Comment_div, "User-review", "MakiMaster7");
     Context_text = "I went to this sushi place and ordered the spicy tuna roll. It was so spicy, I think I saw my ancestors. But in all seriousness, it was delicious! Just be prepared to sweat a little.";
     CreateParagraph(Reviews_Comment_div, "Reviews-paragraph", Context_text);
+    const OpeningHour = Creatediv(DescriptionDiv,"OpeningHourDiv")
+    Context_text = "Openning Hours"
+    const OpeningHour_Title = CreateH2(OpeningHour,"OpeningHour_Title",Context_text)
+    Context_text = "Someshit Sushi is open Monday through Thursday from 12:00 PM to 10:00 PM. On Fridays, we're open a bit later, from 12:00 PM to 11:00 PM. Our weekend hours are Saturday from 5:00 PM to 11:00 PM and Sunday from 5:00 PM to 10:00 PM."
+    const OpeningHours_Paragraph = CreateParagraph(OpeningHour,"OpeningHourParagraph",Context_text)
     const PleaseDescription = Creatediv(DescriptionDiv, "Please");
     Context_text = "Want to experience it?";
     CreateH2(PleaseDescription, "", Context_text);
@@ -91,9 +93,19 @@ const HomePage = function() {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-    HomePage(); 
 });
 
 Home_Button.addEventListener("click", (e) => {
+    clearContent()
     HomePage();
+});
+
+Menu_Button.addEventListener("click", () => {
+    clearContent()
+    Menu_Page()
+});
+
+About_Button.addEventListener("click", () => {
+    clearContent()
+    About_page()
 });
