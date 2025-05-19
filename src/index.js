@@ -93,6 +93,7 @@ const HomePage = function() {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
+    HomePage()
 });
 
 Home_Button.addEventListener("click", (e) => {
