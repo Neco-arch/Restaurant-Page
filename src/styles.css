@@ -145,3 +145,37 @@ button {
 .Price{
     text-align: right;
 }
+
+.Bottom-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;  
+  position: fixed;
+  bottom: 0; 
+  left: 0;
+  width: 100%; 
+  background-color: transparent; 
+  color: snow; 
+  text-align: center; 
+  padding: 10px 0; 
+  font-size: 0.9em; 
+  border-top: 1px solid #eee; 
+  box-sizing: border-box; 
+  border: none;
+  
+}
+
+
+
+
+.Github_logo {
+    width: 20px;
+}
+
+
+
+a {
+    color: snow;
+    text-decoration: none;
+}

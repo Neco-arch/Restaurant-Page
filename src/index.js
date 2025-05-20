@@ -87,12 +87,10 @@ const HomePage = function() {
     Context_text = "Someshit Sushi is open Monday through Thursday from 12:00 PM to 10:00 PM. On Fridays, we're open a bit later, from 12:00 PM to 11:00 PM. Our weekend hours are Saturday from 5:00 PM to 11:00 PM and Sunday from 5:00 PM to 10:00 PM."
     const OpeningHours_Paragraph = CreateParagraph(OpeningHour,"OpeningHourParagraph",Context_text)
     const PleaseDescription = Creatediv(DescriptionDiv, "Please");
-    Context_text = "Want to experience it?";
-    CreateH2(PleaseDescription, "", Context_text);
-    CreateButton(DescriptionDiv, "Order-now", "Book Now!");
 };
 
 document.addEventListener("DOMContentLoaded", () => {
+    HomePage()
 });
 
 Home_Button.addEventListener("click", (e) => {
