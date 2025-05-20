@@ -4,7 +4,6 @@ import img from "./asset/resources/ryunosuke-kikuno-5jAfMVcE0Ag-unsplash.jpg";
 export const About_page = function() {
     let Context_text;
     const ContentID = document.querySelector("#Content");
-    ContentID.innerHTML = ''; // Clear previous content
 
     Context_text = "About us";
     const AboutUs = CreateH1(ContentID, "About-Us", Context_text);

@@ -21,7 +21,8 @@ const menuArray = {
 
 
 export const Menu_Page = function() {
-    const Content = document.querySelector("#Content")
+    const Content = document.querySelector("#Content");
+    const Page_Tittle = CreateH1(Content,"","Menu from our resturant !");
     const Description = Creatediv(Content,"Description");
 
     // Templete
