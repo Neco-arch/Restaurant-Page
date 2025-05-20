@@ -99,7 +99,7 @@ button {
 .Vibing-style {
     display: flex;
     flex-direction: column;
-    font-size: 1.2rem;
+    font-size: 1rem;
     gap: 20px;
     padding: 10px;
 }
@@ -118,4 +118,30 @@ button {
     font-size: 1.2rem;
     gap: 10px;
     padding: 15px;
+}
+
+.Heading-Vibing {
+    font-weight: 700;
+}
+
+.Beverages-titles {
+  text-align: center;
+}
+
+.Beverages-Menu {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  flex-direction: row;
+  font-size: 24px;
+  padding: 20px;
+}
+
+.Beverages-Menu p {
+  width: 45%; 
+  margin-bottom: 0.5em; 
+  box-sizing: border-box; 
+}
+.Price{
+    text-align: right;
 }

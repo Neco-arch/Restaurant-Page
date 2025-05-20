@@ -93,20 +93,19 @@ const HomePage = function() {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-    HomePage()
 });
 
 Home_Button.addEventListener("click", (e) => {
-    clearContent()
+    clearContent();
     HomePage();
 });
 
 Menu_Button.addEventListener("click", () => {
-    clearContent()
-    Menu_Page()
+    clearContent();
+    Menu_Page();
 });
 
 About_Button.addEventListener("click", () => {
-    clearContent()
-    About_page()
+    clearContent();
+    About_page();
 });
